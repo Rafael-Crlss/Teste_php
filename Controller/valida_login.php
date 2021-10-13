@@ -17,10 +17,10 @@ $resultado = mysqli_fetch_assoc($sql_valida_usuario);
 if (isset($resultado) && password_verify($senha, $resultado['SENHA'])) {
 
         $_SESSION['sessaoUsuario'] = $resultado['NOME_COMPLETO'];
-        header("Location: ../View/dashboard.php");
+        header("Location: ../pages/View/matricular_aluno.php");
     
 } else {
-    header("Location: ../View/index.php");
+    header("Location: ../pages/View/index.php");
     $_SESSION['erro_login'] = "<div class='alert alert-danger' style='text-align: center';>Usuário ou senha <strong>inválidos</strong> !</div>";
 }
 

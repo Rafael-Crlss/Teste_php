@@ -17,7 +17,7 @@
             <div class="col-6">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="margin-right: 10%; margin-top: 5%;">
                     <div class="card-body">                        
-                        <form method="POST" action="../Controller/valida_login.php">
+                        <form method="POST" action="../../Controller/valida_login.php">
                             <div class="form-group">
                                 <h4 style="margin-top: 30px;">Usuário</h4>
                                 <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Digite seu login" autocomplete="off" required>
